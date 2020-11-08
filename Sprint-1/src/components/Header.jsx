@@ -9,10 +9,19 @@ class Header extends React.Component {
     return (
       <header className="header">
         <LogoImg src={LogoImg} />
-        <Input className="input-text" type="text" placeholder="Search" />
+        <section className="header__search">
+          <Input
+            className="header__search__input"
+            type="text"
+            placeholder="Search"
+          />
+        </section>
         <section className="upload__section">
-          <Btn text="+ UPLOAD" />
-          <ProfileImg image="./Images/Mohan-muruge.jpg" />
+          <Btn text="+ UPLOAD" className="btn btn--header" />
+          <ProfileImg
+            image="./Images/Mohan-muruge.jpg"
+            className="profile__img"
+          />
         </section>
       </header>
     );

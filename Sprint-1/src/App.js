@@ -9,7 +9,7 @@ class App extends React.Component {
   state = {
     videoDescription: {
       id: "1",
-      title: "BMX Rampage: 201 Highlights",
+      title: "BMX Rampage: 2018 Highlights",
       description:
         "On a gusty day in Southern Utah, a group of 25 daring mountain bikers blew the doors off what is possible on two wheels, unleashing some of the biggest moments the sport has ever seen. While mother nature only allowed for one full run before the conditions made it impossible to ride, that was all that was needed for event veteran Kyle Strait, who won the event for the second time -- eight years after his first Red Cow Rampage title",
       channel: "By Red Cow",
@@ -21,23 +21,23 @@ class App extends React.Component {
       timestamp: "12/18/2018",
       comments: [
         {
-          image: "",
+          image: "../public/Images/silver.png",
           name: "Michael Lyons",
-          time: "",
+          time: "12/18/2020",
           text:
             "They BLEW the ROOF off at their last show, once everyone started figuring out they were going. This is still simply the greatest opening of a concert I have EVER witnessed.",
         },
         {
-          image: "",
+          image: "../public/Images/silver.png",
           name: "Gary Wong",
-          time: "",
+          time: "12/18/2020",
           text:
             "Every time I see him shred I feel so motivated to get off my couch and hop on my board. He’s so talented! I wish I can ride like him one day so I can really enjoy myself!",
         },
         {
-          image: "",
+          image: "../public/Images/silver.png",
           name: "Gary Wong",
-          time: "",
+          time: "12/18/2020",
           text:
             "How can someone be so good!!! You can tell he lives for this and loves to do it every day. Everytime I see him I feel instantly happy! He’s definitely my favorite ever!",
         },
@@ -100,11 +100,13 @@ class App extends React.Component {
       <div className="App">
         <Header />
         <Hero />
-        <VideoDesc
-          desc={this.state.videoDescription}
-          comments={this.state.videoDescription.comments}
-        />
-        <VideoPlaylist videos={this.state.sideVideos} />
+        <div className="desc-comments">
+          <VideoDesc
+            desc={this.state.videoDescription}
+            comments={this.state.videoDescription.comments}
+          />
+          <VideoPlaylist videos={this.state.sideVideos} />
+        </div>
       </div>
     );
   }
