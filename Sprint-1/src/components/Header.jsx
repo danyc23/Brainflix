@@ -11,7 +11,7 @@ class Header extends React.Component {
         <LogoImg src={LogoImg} />
         <section className="header__search">
           <Input
-            className="header__search__input"
+            className="header__search__input header__search__input__loop"
             type="text"
             placeholder="Search"
           />

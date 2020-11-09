@@ -25,8 +25,11 @@
   &__title {
     margin-top: 2rem;
     margin-bottom: 1rem;
+    @include mobile-header;
+    color: $black;
     @include tablet {
       margin-top: 3rem;
+      @include tablet-header;
     }
   }
   &__by {
@@ -36,14 +39,30 @@
     }
     &__channel {
       margin-right: 0.5rem;
+      @include mobile-subheaders;
+      color: $black;
+      @include tablet {
+        @include tablet-sub-header;
+        font-weight: bold;
+      }
     }
     &__date {
+      @include mobile-subheaders;
+      color: #afafaf;
+      @include tablet {
+        @include tablet-sub-header;
+      }
     }
   }
   &__views {
     display: flex;
     &-number {
       margin-left: 0.5rem;
+      @include mobile-subheaders;
+      color: $black;
+      @include tablet {
+        @include tablet-sub-header;
+      }
     }
   }
   &__likes {
@@ -51,14 +70,22 @@
     margin-left: 1rem;
     &-number {
       margin-left: 0.5rem;
+      @include mobile-subheaders;
+      color: $black;
+      @include tablet {
+        @include tablet-sub-header;
+      }
       @include desktop {
         margin-right: 1.5rem;
       }
     }
   }
   &__text {
+    @include mobile-paragraph;
+    color: $black;
     @include tablet {
       width: 70%;
+      @include tablet-paragraph;
     }
     &__section {
       border-top: 2px solid #e1e1e1;

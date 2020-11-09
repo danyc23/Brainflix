@@ -12,7 +12,7 @@ function Comment(props) {
       <section className="comment__item__right__section">
         <section className="comment__item__name-date__section">
           <h4 className="comment__item__name">{props.name}</h4>
-          <h4>{props.date}</h4>
+          <h4 className="comment__item__date">{props.date}</h4>
         </section>
         <p className="comment__text">{props.comment}</p>
       </section>

@@ -25,7 +25,7 @@
             align-items: center;
     margin-left: 9.5625rem;
     margin-right: 0;
-    width: 16rem;
+    width: 15rem;
   }
 }
 
@@ -36,8 +36,6 @@
 }
 
 .header__search__input {
-  background-image: url(../Assets/Icons/SVG/Icon-search.svg);
-  background-repeat: no-repeat;
   height: 3rem;
   border-radius: 5px;
   width: 100%;
@@ -48,6 +46,13 @@
   .header__search__input {
     margin-top: 0.5rem;
   }
+}
+
+.header__search__input__loop {
+  background-image: url(../Assets/Icons/SVG/Icon-search.svg);
+  background-repeat: no-repeat;
+  background-position: 10% 50%;
+  padding-left: 50px;
 }
 
 .logo {
@@ -75,19 +80,28 @@
 
 .btn {
   margin: 0 1rem 1rem 1rem;
-  padding: 1rem 4.8rem 1rem 4.8rem;
+  padding: 0.7rem 4.8rem 0.7rem 4.8rem;
   border-radius: 5px;
   border: none;
   background-color: #0095ff;
   color: #ffffff;
 }
 
+.btn--header {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "avenir demi";
+}
+
 @media (min-width: 768px) {
   .btn--header {
-    padding: 1rem;
+    padding: 0.9rem;
     margin: 0 1.5rem 1rem 1.5rem;
     position: relative;
     top: 0.5rem;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "avenir demi";
   }
 }
 
@@ -173,6 +187,20 @@
 .side-video__section__title {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "avenir demi";
+  font-weight: bold;
+  color: #afafaf;
+}
+
+@media (min-width: 768px) {
+  .side-video__section__title {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "avenir demi";
+    font-weight: bold;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -193,6 +221,40 @@
 
 .side-video__title {
   margin-bottom: 1rem;
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "avenir";
+  font-weight: normal;
+  font-weight: bold;
+  color: #323232;
+}
+
+@media (min-width: 768px) {
+  .side-video__title {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "avenir demi";
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+  }
+}
+
+.side-video__channel {
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "avenir";
+  font-weight: normal;
+  font-family: "avenir demi";
+  color: #323232;
+}
+
+@media (min-width: 768px) {
+  .side-video__channel {
+    font-size: 14px;
+    line-height: 22px;
+    font-family: "avenir";
+    font-weight: normal;
+  }
 }
 
 .ratings {
@@ -243,11 +305,20 @@
 .video-desc__title {
   margin-top: 2rem;
   margin-bottom: 1rem;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "avenir";
+  font-weight: bold;
+  color: #323232;
 }
 
 @media (min-width: 768px) {
   .video-desc__title {
     margin-top: 3rem;
+    font-size: 36px;
+    line-height: 44px;
+    font-family: "avenir";
+    font-weight: bold;
   }
 }
 
@@ -265,6 +336,34 @@
 
 .video-desc__by__channel {
   margin-right: 0.5rem;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "avenir demi";
+  color: #323232;
+}
+
+@media (min-width: 768px) {
+  .video-desc__by__channel {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "avenir demi";
+    font-weight: bold;
+  }
+}
+
+.video-desc__by__date {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "avenir demi";
+  color: #afafaf;
+}
+
+@media (min-width: 768px) {
+  .video-desc__by__date {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "avenir demi";
+  }
 }
 
 .video-desc__views {
@@ -275,6 +374,18 @@
 
 .video-desc__views-number {
   margin-left: 0.5rem;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "avenir demi";
+  color: #323232;
+}
+
+@media (min-width: 768px) {
+  .video-desc__views-number {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "avenir demi";
+  }
 }
 
 .video-desc__likes {
@@ -286,6 +397,18 @@
 
 .video-desc__likes-number {
   margin-left: 0.5rem;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "avenir demi";
+  color: #323232;
+}
+
+@media (min-width: 768px) {
+  .video-desc__likes-number {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "avenir demi";
+  }
 }
 
 @media (min-width: 1440px) {
@@ -294,9 +417,21 @@
   }
 }
 
+.video-desc__text {
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "avenir";
+  font-weight: normal;
+  color: #323232;
+}
+
 @media (min-width: 768px) {
   .video-desc__text {
     width: 70%;
+    font-size: 14px;
+    line-height: 22px;
+    font-family: "avenir";
+    font-weight: normal;
   }
 }
 
@@ -312,6 +447,18 @@ ul {
 
 .comments-section__title {
   margin-bottom: 2rem;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "avenir demi";
+  color: #323232;
+}
+
+@media (min-width: 768px) {
+  .comments-section__title {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "avenir demi";
+  }
 }
 
 .comments__input {
@@ -344,6 +491,18 @@ ul {
 .comments-form__title {
   margin-left: 1rem;
   margin-bottom: 0.5rem;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "avenir demi";
+  color: #afafaf;
+}
+
+@media (min-width: 768px) {
+  .comments-form__title {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "avenir demi";
+  }
 }
 
 .comments-form__btn {
@@ -353,6 +512,9 @@ ul {
   border: none;
   background-color: #0095ff;
   color: #ffffff;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "avenir demi";
 }
 
 @media (min-width: 768px) {
@@ -361,6 +523,9 @@ ul {
     margin-right: 1.5rem;
     width: 10rem;
     padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "avenir demi";
   }
 }
 
@@ -377,9 +542,21 @@ ul {
   background-color: #e1e1e1;
 }
 
+.comment__text {
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "avenir";
+  font-weight: normal;
+  color: #323232;
+}
+
 @media (min-width: 768px) {
   .comment__text {
     width: 39rem;
+    font-size: 14px;
+    line-height: 22px;
+    font-family: "avenir";
+    font-weight: normal;
   }
 }
 
@@ -401,9 +578,35 @@ ul {
   margin-left: 1rem;
 }
 
+.comment__item__date {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "avenir demi";
+  color: #afafaf;
+}
+
+@media (min-width: 768px) {
+  .comment__item__date {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "avenir demi";
+  }
+}
+
+.comment__item__name {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "avenir demi";
+  font-weight: bold;
+  color: #323232;
+}
+
 @media (min-width: 768px) {
   .comment__item__name {
     margin-right: 1rem;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "avenir demi";
   }
 }
 
@@ -443,6 +646,23 @@ ul {
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+@font-face {
+  src: url(../Assets/transfonter.org-20201108-231602/AvenirNextLTPro-Bold.woff2);
+  font-family: "avenir";
+  font-weight: bold;
+}
+
+@font-face {
+  src: url(../Assets/transfonter.org-20201108-231602/AvenirNextLTPro-Demi.woff2);
+  font-family: "avenir demi";
+}
+
+@font-face {
+  src: url(../Assets/transfonter.org-20201108-231602/AvenirNextLTPro-Regular.woff2);
+  font-family: "avenir";
+  font-weight: normal;
 }
 
 * {
