@@ -1,0 +1,101 @@
+.ratings {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  @include tablet {
+    margin-top: 0;
+    margin-right: 1.5rem;
+  }
+}
+.video-desc {
+  margin: 0rem 1rem 0 1rem;
+  @include tablet {
+    margin-left: 1.5rem;
+  }
+  @include desktop {
+    margin-left: 11.25rem;
+  }
+  &__tablet {
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+  &__title {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    @include mobile-header;
+    color: $black;
+    @include tablet {
+      margin-top: 3rem;
+      @include tablet-header;
+    }
+  }
+  &__by {
+    display: flex;
+    @include tablet {
+      margin-bottom: 1.5rem;
+    }
+    &__channel {
+      margin-right: 0.5rem;
+      @include mobile-subheaders;
+      color: $black;
+      @include tablet {
+        @include tablet-sub-header;
+        font-weight: bold;
+      }
+    }
+    &__date {
+      @include mobile-subheaders;
+      color: #afafaf;
+      @include tablet {
+        @include tablet-sub-header;
+      }
+    }
+  }
+  &__views {
+    display: flex;
+    &-number {
+      margin-left: 0.5rem;
+      @include mobile-subheaders;
+      color: $black;
+      @include tablet {
+        @include tablet-sub-header;
+      }
+    }
+  }
+  &__likes {
+    display: flex;
+    margin-left: 1rem;
+    &-number {
+      margin-left: 0.5rem;
+      @include mobile-subheaders;
+      color: $black;
+      @include tablet {
+        @include tablet-sub-header;
+      }
+      @include desktop {
+        margin-right: 1.5rem;
+      }
+    }
+  }
+  &__text {
+    @include mobile-paragraph;
+    color: $black;
+    @include tablet {
+      width: 70%;
+      @include tablet-paragraph;
+    }
+    &__section {
+      border-top: 2px solid #e1e1e1;
+      padding-top: 1.5rem;
+      margin-bottom: 2.5rem;
+      @include tablet {
+      }
+    }
+  }
+}
+ul {
+  list-style: none;
+}

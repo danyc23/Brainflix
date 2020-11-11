@@ -1,0 +1,14 @@
+@import "./partials/header.scss";
+@import "./partials/hero";
+@import "./partials/videoPlaylist";
+@import "./partials/variables";
+@import "./partials/videodesc";
+@import "./partials/comments";
+@import "./partials/mixins";
+@import "./partials/descComments";
+@import "./partials/typography";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

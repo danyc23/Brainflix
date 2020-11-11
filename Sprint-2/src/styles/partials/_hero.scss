@@ -1,0 +1,24 @@
+.video {
+  width: 100%;
+  height: 11.4375rem;
+  @include tablet {
+    width: 43.75rem;
+    height: 25rem;
+    margin-left: 2rem;
+    margin-right: 1.5rem;
+  }
+  @include desktop {
+    width: 59rem;
+    margin-left: 15.9375rem;
+    height: 100%;
+  }
+  &-section {
+    @include tablet {
+      background-color: #323232;
+      width: 100%;
+    }
+    @include desktop {
+      height: 33.75rem;
+    }
+  }
+}
