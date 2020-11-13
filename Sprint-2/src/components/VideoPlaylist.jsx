@@ -5,10 +5,11 @@ function VideoPlaylist(props) {
     <section className="side-video__section">
       <h4 className="side-video__section__title">NEXT VIDEO</h4>
       <ul className="side-video__list">
-        {props.videos.map((video, i) => {
+        {props.videos.map((video) => {
           return (
             <SideVideo
-              key={i}
+              key={video.id}
+              id={video.id}
               image={video.image}
               title={video.title}
               channel={video.channel}

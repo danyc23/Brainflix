@@ -31,16 +31,18 @@ function VideoDesc(props) {
       <h4 className="comments-section__title">3 Comments</h4>
       <CommentsForm />
       <ul>
-        {commentArray.sort().map((comment) => {
-          return (
-            <Comment
-              image={comment.image}
-              name={comment.name}
-              date={comment.time}
-              comment={comment.text}
-            />
-          );
-        })}
+        {commentArray &&
+          commentArray.sort().map((comment) => {
+            return (
+              <Comment
+                key={comment.id}
+                image={comment.image}
+                name={comment.name}
+                date={comment.timestamp}
+                comment={comment.comment}
+              />
+            );
+          })}
       </ul>
     </section>
   );

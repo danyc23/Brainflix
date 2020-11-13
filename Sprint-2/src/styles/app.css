@@ -40,6 +40,7 @@
   border-radius: 5px;
   width: 100%;
   border: 2px solid #e1e1e1;
+  background-color: #fafafa;
 }
 
 @media (min-width: 768px) {
@@ -663,6 +664,104 @@ ul {
   src: url(../Assets/transfonter.org-20201108-231602/AvenirNextLTPro-Regular.woff2);
   font-family: "avenir";
   font-weight: normal;
+}
+
+.upload-form__title {
+  margin: 1.5rem 1rem 2rem 1rem;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "avenir";
+  font-weight: bold;
+  color: #323232;
+}
+
+.upload-form__video {
+  margin: 0 1rem 2rem 1rem;
+  width: 18rem;
+  height: 9.5625rem;
+}
+
+.upload-form__video__title {
+  margin-left: 1rem;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "avenir demi";
+  color: #afafaf;
+}
+
+.upload-form__input__title {
+  margin: 0 1rem 0.2rem 1rem;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "avenir demi";
+  color: #afafaf;
+}
+
+.upload-form__input__name {
+  margin: 0 1rem 1.5rem 1rem;
+  height: 2.5rem;
+  width: 18rem;
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "avenir";
+  font-weight: normal;
+  color: #323232;
+  background-color: #fafafa;
+  border-radius: 4px;
+  border-color: #e1e1e1;
+}
+
+.upload-form__input__desc {
+  width: 18rem;
+  margin: 0 1rem 1.5rem 1rem;
+  height: 8.9375rem;
+  background-color: #fafafa;
+  border-radius: 4px;
+  border-color: #e1e1e1;
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "avenir";
+  font-weight: normal;
+}
+
+.upload-form__input__desc__title {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "avenir demi";
+  color: #afafaf;
+  margin: 0rem 1rem 0.2rem 1rem;
+}
+
+.upload-form__publish__btn {
+  margin: 0 1rem 1.5rem 1rem;
+  width: 18rem;
+  height: 2.5rem;
+  background-color: #0095ff;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "avenir demi";
+  border-style: none;
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.upload-form__cancel {
+  background-color: white;
+  border-style: none;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "avenir demi";
+  color: #0095ff;
+  margin: 0 1rem 1.5rem 1rem;
+}
+
+.upload-form__cancel__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 * {
