@@ -677,6 +677,13 @@ ul {
   font-weight: normal;
 }
 
+@media (min-width: 1440px) {
+  .upload-form {
+    margin-left: 11.25rem;
+    margin-right: 11.25rem;
+  }
+}
+
 .upload-form__title {
   padding: 1.5rem 1rem 2rem 1rem;
   font-size: 24px;
@@ -699,6 +706,12 @@ ul {
   }
 }
 
+@media (min-width: 1440px) {
+  .upload-form__title {
+    padding-left: 0;
+  }
+}
+
 .upload-form__video {
   margin: 0 1rem 2rem 1rem;
   width: 18rem;
@@ -712,6 +725,12 @@ ul {
     width: 21.5rem;
     height: 11.4375rem;
     border-radius: 4px;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 1440px) {
+  .upload-form__video {
+    margin-left: 0;
   }
 }
 
@@ -734,6 +753,15 @@ ul {
   }
 }
 
+@media (min-width: 1440px) {
+  .upload-form__video__title {
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: 0;
+    border-top: none;
+  }
+}
+
 .upload-form__input__title {
   margin: 0 1rem 0.2rem 1rem;
   font-size: 14px;
@@ -748,6 +776,12 @@ ul {
     font-size: 16px;
     line-height: 24px;
     font-family: "avenir demi";
+  }
+}
+
+@media (min-width: 1440px) {
+  .upload-form__input__title {
+    margin-left: 0;
   }
 }
 
@@ -777,6 +811,12 @@ ul {
   }
 }
 
+@media (min-width: 1440px) {
+  .upload-form__input__name {
+    height: 2.4rem;
+  }
+}
+
 .upload-form__input__desc {
   width: 18rem;
   margin: 0 1rem 1.5rem 0;
@@ -801,6 +841,12 @@ ul {
   }
 }
 
+@media (min-width: 1440px) {
+  .upload-form__input__desc {
+    height: 5.875rem;
+  }
+}
+
 .upload-form__input__desc__title {
   font-size: 14px;
   line-height: 22px;
@@ -818,6 +864,12 @@ ul {
   }
 }
 
+@media (min-width: 1440px) {
+  .upload-form__input__desc__title {
+    margin-left: 0;
+  }
+}
+
 .upload-form__input__container {
   margin-right: 1.5rem;
   margin-left: 1rem;
@@ -830,8 +882,22 @@ ul {
   }
 }
 
+@media (min-width: 1440px) {
+  .upload-form__input__container {
+    margin-left: 0;
+    margin-right: 0;
+    width: 44.3rem;
+  }
+}
+
 .upload-form__input__container--desc {
   border-bottom: 1px solid #afafaf;
+}
+
+@media (min-width: 1440px) {
+  .upload-form__input__container--desc {
+    border-bottom: none;
+  }
 }
 
 .upload-form__publish__btn {
@@ -854,6 +920,12 @@ ul {
     font-size: 16px;
     line-height: 24px;
     font-family: "avenir demi";
+  }
+}
+
+@media (min-width: 1440px) {
+  .upload-form__publish__btn {
+    margin-right: 0;
   }
 }
 
@@ -903,7 +975,7 @@ ul {
     line-height: 24px;
     font-family: "avenir demi";
     position: relative;
-    top: 1rem;
+    top: 1.3rem;
   }
 }
 
@@ -932,6 +1004,20 @@ ul {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media (min-width: 1440px) {
+  .upload-form__button__container {
+    border-top: 1px solid #afafaf;
+  }
+}
+
+@media (min-width: 1440px) {
+  .upload-form__desktop-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
