@@ -136,6 +136,10 @@
 .video {
   width: 100%;
   height: 11.4375rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 @media (min-width: 768px) {
@@ -256,6 +260,13 @@
     font-family: "avenir";
     font-weight: normal;
   }
+}
+
+.side-video__link {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .ratings {
@@ -667,18 +678,41 @@ ul {
 }
 
 .upload-form__title {
-  margin: 1.5rem 1rem 2rem 1rem;
+  padding: 1.5rem 1rem 2rem 1rem;
   font-size: 24px;
   line-height: 32px;
   font-family: "avenir";
   font-weight: bold;
   color: #323232;
+  border-top: 1px solid #e1e1e1;
+}
+
+@media (min-width: 768px) {
+  .upload-form__title {
+    margin: 0;
+    font-size: 36px;
+    line-height: 44px;
+    font-family: "avenir";
+    font-weight: bold;
+    padding: 3rem 1.5rem 2rem 1.5rem;
+    border-top: 1px solid #e1e1e1;
+  }
 }
 
 .upload-form__video {
   margin: 0 1rem 2rem 1rem;
   width: 18rem;
   height: 9.5625rem;
+  border-radius: 4px;
+}
+
+@media (min-width: 768px) {
+  .upload-form__video {
+    margin: 0 1.5rem 2.5rem 1.5rem;
+    width: 21.5rem;
+    height: 11.4375rem;
+    border-radius: 4px;
+  }
 }
 
 .upload-form__video__title {
@@ -689,6 +723,17 @@ ul {
   color: #afafaf;
 }
 
+@media (min-width: 768px) {
+  .upload-form__video__title {
+    padding: 2.5rem 1.5rem 0 1.5rem;
+    margin: 0 1.5rem;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "avenir demi";
+    border-top: 1px solid #e1e1e1;
+  }
+}
+
 .upload-form__input__title {
   margin: 0 1rem 0.2rem 1rem;
   font-size: 14px;
@@ -697,8 +742,17 @@ ul {
   color: #afafaf;
 }
 
+@media (min-width: 768px) {
+  .upload-form__input__title {
+    margin: 2.5rem 1.5rem 0 1.5rem;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "avenir demi";
+  }
+}
+
 .upload-form__input__name {
-  margin: 0 1rem 1.5rem 1rem;
+  margin: 0 1rem 1.5rem 0;
   height: 2.5rem;
   width: 18rem;
   font-size: 13px;
@@ -711,9 +765,21 @@ ul {
   border-color: #e1e1e1;
 }
 
+@media (min-width: 768px) {
+  .upload-form__input__name {
+    margin: 0 1.5rem 1.5rem 0;
+    width: 100%;
+    height: 4rem;
+    font-size: 14px;
+    line-height: 22px;
+    font-family: "avenir";
+    font-weight: normal;
+  }
+}
+
 .upload-form__input__desc {
   width: 18rem;
-  margin: 0 1rem 1.5rem 1rem;
+  margin: 0 1rem 1.5rem 0;
   height: 8.9375rem;
   background-color: #fafafa;
   border-radius: 4px;
@@ -724,12 +790,48 @@ ul {
   font-weight: normal;
 }
 
+@media (min-width: 768px) {
+  .upload-form__input__desc {
+    width: 100%;
+    margin-bottom: 2.5rem;
+    font-size: 14px;
+    line-height: 22px;
+    font-family: "avenir";
+    font-weight: normal;
+  }
+}
+
 .upload-form__input__desc__title {
   font-size: 14px;
   line-height: 22px;
   font-family: "avenir demi";
   color: #afafaf;
   margin: 0rem 1rem 0.2rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .upload-form__input__desc__title {
+    margin-left: 1.5rem;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "avenir demi";
+  }
+}
+
+.upload-form__input__container {
+  margin-right: 1.5rem;
+  margin-left: 1rem;
+}
+
+@media (min-width: 768px) {
+  .upload-form__input__container {
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+  }
+}
+
+.upload-form__input__container--desc {
+  border-bottom: 1px solid #afafaf;
 }
 
 .upload-form__publish__btn {
@@ -745,6 +847,16 @@ ul {
   color: #ffffff;
 }
 
+@media (min-width: 768px) {
+  .upload-form__publish__btn {
+    margin-top: 2.5rem;
+    width: 10rem;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "avenir demi";
+  }
+}
+
 .upload-form__cancel {
   background-color: white;
   border-style: none;
@@ -753,6 +865,12 @@ ul {
   font-family: "avenir demi";
   color: #0095ff;
   margin: 0 1rem 1.5rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .upload-form__cancel {
+    display: none;
+  }
 }
 
 .upload-form__cancel__section {
@@ -764,10 +882,67 @@ ul {
           justify-content: center;
 }
 
+.upload-form__cancel--top {
+  background-color: white;
+  border-style: none;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "avenir demi";
+  color: #0095ff;
+  margin: 0 1rem 1.5rem 1rem;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .upload-form__cancel--top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 3rem;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "avenir demi";
+    position: relative;
+    top: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .upload-form__bottom__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+@media (min-width: 768px) {
+  .upload-form__button__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+Link {
+  text-decoration: none;
 }
 /*# sourceMappingURL=app.css.map */

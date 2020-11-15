@@ -51,4 +51,8 @@
       @include tablet-paragraph;
     }
   }
+  &__link {
+    text-decoration: none;
+    display: flex;
+  }
 }

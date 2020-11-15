@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 function SideVideo(props) {
   return (
     <li className="side-video__section__item">
-      <Link to={`/videos/${props.id}`}>
+      <Link className="side-video__link" to={`/videos/${props.id}`}>
         <section className="side-video__img-section">
           <img
             className="side-video__img"
