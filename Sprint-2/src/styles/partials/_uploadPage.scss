@@ -70,6 +70,7 @@
       // width: 100%;
       @include mobile-paragraph;
       color: $black;
+
       background-color: #fafafa;
       border-radius: 4px;
       border-color: #e1e1e1;
@@ -91,6 +92,7 @@
       border-radius: 4px;
       border-color: #e1e1e1;
       @include mobile-paragraph;
+
       @include tablet {
         width: 100%;
         margin-bottom: 2.5rem;
@@ -125,7 +127,10 @@
         width: 44.3rem;
       }
       &--desc {
-        border-bottom: 1px solid #afafaf;
+        @include tablet {
+          border-bottom: 1px solid #afafaf;
+        }
+
         @include desktop {
           border-bottom: none;
         }

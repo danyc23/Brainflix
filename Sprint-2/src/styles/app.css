@@ -52,7 +52,7 @@
 .header__search__input__loop {
   background-image: url(../Assets/Icons/SVG/Icon-search.svg);
   background-repeat: no-repeat;
-  background-position: 10% 50%;
+  background-position: 22px 15px;
   padding-left: 50px;
 }
 
@@ -890,8 +890,10 @@ ul {
   }
 }
 
-.upload-form__input__container--desc {
-  border-bottom: 1px solid #afafaf;
+@media (min-width: 768px) {
+  .upload-form__input__container--desc {
+    border-bottom: 1px solid #afafaf;
+  }
 }
 
 @media (min-width: 1440px) {
