@@ -24,6 +24,11 @@ const getVideoById = (id) => {
   }
 };
 
+router.get("/", (request, response) => {
+  const listOfVideos = videoArr();
+  response.json(videoArr());
+});
+
 // posting a new video
 router.post("/", (request, response) => {
   if (!request.body.title || !request.body.image || !request.body.description) {
