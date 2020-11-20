@@ -28,7 +28,7 @@ class App extends React.Component {
 
   getVideos() {
     axios
-      .get(`https://project-2-api.herokuapp.com/videos?api_key=${apiKey}`)
+      .get(`http://localhost:5000/videos`)
       .then((response) => {
         console.log(response.data);
         this.setState({
@@ -42,7 +42,7 @@ class App extends React.Component {
 
   getHeroVideo(id) {
     axios
-      .get(`https://project-2-api.herokuapp.com/videos/${id}?api_key=${apiKey}`)
+      .get(`http://localhost:5000/videos/${id}`)
       .then((response) => {
         console.log(response.data);
         this.setState({

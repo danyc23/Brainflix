@@ -18,7 +18,7 @@ const getVideoById = (id) => {
   // filter through the array so I can look for the id
   const videoWithId = videos.filter((video) => id === video.id);
   if (videoWithId.length) {
-    return videoWithId;
+    return videoWithId.shift();
   } else {
     return `No video found with the id: ${id}`;
   }
@@ -37,13 +37,38 @@ router.post("/", (request, response) => {
   const newVideo = {
     id: uuidv4(),
     title: request.body.title,
-    image: request.body.image,
+    image: "https://i.imgur.com/5qyCZrD.jpg",
     description: request.body.description,
+    channel: " By Daniel Coulson",
+    views: "9,001,100",
+    likes: "330,955",
+    timestamp: "19/11/2020",
+    comments: [
+      {
+        image: "../public/Images/silver.png",
+        name: "Edwin Coulson",
+        timestamp: "12/18/2020",
+        comment: "This is fantastic",
+      },
+      {
+        image: "../public/Images/silver.png",
+        name: "Arianna Cruz",
+        timestamp: "12/18/2020",
+        comment: "I love coding!",
+      },
+      {
+        image: "../public/Images/silver.png",
+        name: "Tatiana Charris",
+        timestamp: "12/18/2020",
+        comment: "I dont like coding!",
+      },
+    ],
   };
   const oldVideoArray = videoArr();
-  const newVideoArray = oldVideoArray.push(newVideo);
-  fs.writeFileSync(videosData, JSON.stringify(newVideoArray));
-  response.json(newVideoArray);
+  console.log("Old video array", oldVideoArray);
+  oldVideoArray.push(newVideo);
+  fs.writeFileSync(videosData, JSON.stringify(oldVideoArray));
+  response.json(newVideo);
 });
 
 //responding to
@@ -52,6 +77,8 @@ router.get("/", (request, response) => {
 });
 
 router.get("/:id", (request, response) => {
-  response.send("Hello Getting from id");
+  let selectedVideo = getVideoById(request.params.id);
+  response.json(selectedVideo);
 });
+
 module.exports = router;

@@ -1,7 +1,8 @@
 import UploadImage from "../Assets/Upload-video-preview.jpg";
-function UploadForm() {
+
+function UploadForm(props) {
   return (
-    <div className="upload-form">
+    <form className="upload-form" onSubmit={props.handleSubmit}>
       <h1 className="upload-form__title">Upload Video</h1>
       <div className="upload-form__desktop-wrapper">
         <div>
@@ -19,6 +20,8 @@ function UploadForm() {
               className="upload-form__input__name"
               type="text"
               placeholder="Add a title to your video"
+              onChange={props.handleTitle}
+              value={props.formData.title}
             ></input>
           </div>
           <h3 className="upload-form__input__desc__title">
@@ -29,6 +32,8 @@ function UploadForm() {
               className="upload-form__input__desc"
               type="text"
               placeholder="Add a description of your video"
+              onChange={props.handleDescription}
+              value={props.formData.description}
             />
           </div>
         </div>
@@ -46,7 +51,7 @@ function UploadForm() {
           </button>
         </div>
       </div>
-    </div>
+    </form>
   );
 }
 export default UploadForm;
