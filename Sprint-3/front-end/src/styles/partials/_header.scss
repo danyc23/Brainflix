@@ -60,6 +60,10 @@
   color: #ffffff;
   &--header {
     @include mobile-subheaders;
+    background-image: url(../Assets/Icons/SVG/Icon-upload.svg);
+    background-repeat: no-repeat;
+    background-position: 32% 15px;
+    padding-left: 5.5rem;
 
     @include tablet {
       padding: 0.9rem;
@@ -67,6 +71,8 @@
       position: relative;
       top: 0.5rem;
       @include tablet-sub-header;
+      background-position: 2% 20px;
+      padding-left: 1.3rem;
     }
   }
 }

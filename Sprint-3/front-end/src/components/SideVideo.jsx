@@ -11,7 +11,7 @@ function SideVideo(props) {
           />
         </section>
         <section className="side-video__description">
-          <h5 className="side-video__title">{props.title}</h5>
+          <h2 className="side-video__title">{props.title}</h2>
           <p className="side-video__channel">{props.channel}</p>
         </section>
       </Link>

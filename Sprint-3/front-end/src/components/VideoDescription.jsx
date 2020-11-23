@@ -28,11 +28,11 @@ function VideoDesc(props) {
       <section className="video-desc__text__section">
         <p className="video-desc__text">{props.desc.description}</p>
       </section>
-      <h4 className="comments-section__title">3 Comments</h4>
+      <h4 className="comments-section__title">{props.count} Comments</h4>
       <CommentsForm />
       <ul>
         {commentArray &&
-          commentArray.sort().map((comment) => {
+          commentArray.map((comment) => {
             return (
               <Comment
                 key={comment.id}

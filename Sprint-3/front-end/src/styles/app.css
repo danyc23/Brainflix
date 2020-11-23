@@ -92,6 +92,10 @@
   font-size: 14px;
   line-height: 22px;
   font-family: "avenir demi";
+  background-image: url(../Assets/Icons/SVG/Icon-upload.svg);
+  background-repeat: no-repeat;
+  background-position: 32% 15px;
+  padding-left: 5.5rem;
 }
 
 @media (min-width: 768px) {
@@ -103,6 +107,8 @@
     font-size: 16px;
     line-height: 24px;
     font-family: "avenir demi";
+    background-position: 2% 20px;
+    padding-left: 1.3rem;
   }
 }
 
@@ -175,6 +181,7 @@
 .side-video__img {
   width: 7.5rem;
   height: 4.375rem;
+  border-radius: 5px;
 }
 
 .side-video__section {

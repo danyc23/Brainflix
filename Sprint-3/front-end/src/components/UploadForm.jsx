@@ -1,4 +1,5 @@
 import UploadImage from "../Assets/Upload-video-preview.jpg";
+import { Link } from "react-router-dom";
 
 function UploadForm(props) {
   return (
@@ -46,9 +47,11 @@ function UploadForm(props) {
           PUBLISH
         </button>
         <div className="upload-form__cancel__section">
-          <button type="reset" className="upload-form__cancel">
-            CANCEL
-          </button>
+          <Link to="/">
+            <button type="reset" className="upload-form__cancel">
+              CANCEL
+            </button>
+          </Link>
         </div>
       </div>
     </form>

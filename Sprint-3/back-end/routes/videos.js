@@ -31,13 +31,13 @@ router.get("/", (request, response) => {
 
 // posting a new video
 router.post("/", (request, response) => {
-  if (!request.body.title || !request.body.image || !request.body.description) {
+  if (!request.body.title || !request.body.description) {
     response.status(400).json({ msg: "Bad request" });
   }
   const newVideo = {
     id: uuidv4(),
     title: request.body.title,
-    image: "https://i.imgur.com/5qyCZrD.jpg",
+    image: "https://picsum.photos/id/237/500/600",
     description: request.body.description,
     channel: " By Daniel Coulson",
     views: "9,001,100",

@@ -12,6 +12,7 @@ class App extends React.Component {
   state = {
     videoDescription: {},
     sideVideos: [],
+    commentCount: 0,
   };
   componentDidMount() {
     this.getVideos();
@@ -47,6 +48,7 @@ class App extends React.Component {
         console.log(response.data);
         this.setState({
           videoDescription: response.data,
+          commentCount: response.data.comments.length,
         });
       })
       .catch();
@@ -61,6 +63,7 @@ class App extends React.Component {
           <VideoDesc
             desc={this.state.videoDescription}
             comments={this.state.videoDescription.comments}
+            count={this.state.commentCount}
           />
           <VideoPlaylist videos={this.state.sideVideos} />
         </div>
