@@ -7,6 +7,6 @@ app.use(cors());
 app.use(express.json());
 app.use("/videos", videos);
 
-app.listen(5000, (request, response) => {
+app.listen(2000, (request, response) => {
   console.log("Server is Running");
 });

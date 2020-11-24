@@ -29,7 +29,7 @@ class App extends React.Component {
 
   getVideos() {
     axios
-      .get(`http://localhost:5000/videos`)
+      .get(`http://localhost:2000/videos`)
       .then((response) => {
         console.log(response.data);
         this.setState({
@@ -43,7 +43,7 @@ class App extends React.Component {
 
   getHeroVideo(id) {
     axios
-      .get(`http://localhost:5000/videos/${id}`)
+      .get(`http://localhost:2000/videos/${id}`)
       .then((response) => {
         console.log(response.data);
         this.setState({
