@@ -5,6 +5,8 @@ import LikesLogo from "../Assets/Icons/SVG/Icon-likes.svg";
 
 function VideoDesc(props) {
   let desc = props.desc;
+  let newDate = new Date(desc.timestamp).toLocaleDateString();
+  console.log(newDate);
   const commentArray = props.comments;
   return (
     <section className="video-desc">
@@ -12,7 +14,7 @@ function VideoDesc(props) {
       <section className="video-desc__tablet">
         <div className="video-desc__by">
           <h4 className="video-desc__by__channel">{desc.channel}</h4>
-          <h4 className="video-desc__by__date">{desc.timestamp}</h4>
+          <h4 className="video-desc__by__date">{newDate}</h4>
         </div>
         <section className="ratings">
           <div className="video-desc__views">
@@ -38,7 +40,7 @@ function VideoDesc(props) {
                 key={comment.id}
                 image={comment.image}
                 name={comment.name}
-                date={comment.timestamp}
+                date={newDate}
                 comment={comment.comment}
               />
             );
